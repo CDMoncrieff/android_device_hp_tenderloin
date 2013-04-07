@@ -1063,7 +1063,7 @@ void open_uinput(void)
 	device.absflat[ABS_MT_POSITION_Y] = 0;
 
 	device.absmax[ABS_MT_PRESSURE] = 2000;
-	device.absmin[ABS_MT_PRESSURE] = 250;
+	device.absmin[ABS_MT_PRESSURE] = 385;
 	device.absfuzz[ABS_MT_PRESSURE] = 0;
 	device.absflat[ABS_MT_PRESSURE] = 0;
 
