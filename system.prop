@@ -7,7 +7,7 @@ ro.additionalmounts=/mnt/usbdisk
 
 ro.cwm.forbid_format=/boot
 
-wifi.supplicant_scan_interval=45
+wifi.supplicant_scan_interval=180
 wifi.interface=wlan0
 
 debug.fb.rgb565 = 0
@@ -37,3 +37,11 @@ net.bt.name=Android
 persist.service.adb.enable=1
 persist.sys.usb.config=mtp,adb
 
+# various performance tweaks
+debug.performance.tuning=1
+video.accelerate.hw=1
+persist.sys.use_dithering=0
+ro.home_app_adj=1
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+dalvik.vm.execution-mode=int:jit
+com.qc.hardware=true
