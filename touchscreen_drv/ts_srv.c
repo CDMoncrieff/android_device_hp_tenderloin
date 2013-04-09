@@ -107,16 +107,16 @@
 #define MAX_DELTA_DEBUG 0 // Set to 1 to see debug logging for max delta
 
 // Any touch above this threshold is immediately reported to the system
-#define TOUCH_INITIAL_THRESHOLD 32
+#define TOUCH_INITIAL_THRESHOLD 34
 int touch_initial_thresh = TOUCH_INITIAL_THRESHOLD;
 // Previous touches that have already been reported will continue to be
 // reported so long as they stay above this threshold
-#define TOUCH_CONTINUE_THRESHOLD 26
+#define TOUCH_CONTINUE_THRESHOLD 32
 int touch_continue_thresh = TOUCH_CONTINUE_THRESHOLD;
 // New touches above this threshold but below TOUCH_INITIAL_THRESHOLD will not
 // be reported unless the touch continues to appear.  This is designed to
 // filter out brief, low threshold touches that may not be valid.
-#define TOUCH_DELAY_THRESHOLD 28
+#define TOUCH_DELAY_THRESHOLD 33
 int touch_delay_thresh = TOUCH_DELAY_THRESHOLD;
 // Delay before a touch above TOUCH_DELAY_THRESHOLD but below
 // TOUCH_INITIAL_THRESHOLD will be reported.  We will wait and see if this
